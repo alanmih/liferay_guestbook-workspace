@@ -20,10 +20,10 @@ import com.liferay.portal.aop.AopService;
 import org.osgi.service.component.annotations.Component;
 
 /**
- * The implementation of the guestbook remote service.
+ * The implementation of the guestbookweb remote service.
  *
  * <p>
- * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbook.service.GuestbookService</code> interface.
+ * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbookweb.service.GuestbookService</code> interface.
  *
  * <p>
  * This is a remote service. Methods of this service are expected to have security checks based on the propagated JAAS credentials because this service can be accessed remotely.
@@ -44,6 +44,6 @@ public class GuestbookServiceImpl extends GuestbookServiceBaseImpl {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never reference this class directly. Always use <code>com.liferay.docs.guestbook.service.GuestbookServiceUtil</code> to access the guestbook remote service.
+	 * Never reference this class directly. Always use <code>com.liferay.docs.guestbookweb.service.GuestbookServiceUtil</code> to access the guestbookweb remote service.
 	 */
 }

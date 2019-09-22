@@ -65,7 +65,7 @@ import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 
 /**
- * The persistence implementation for the guestbook service.
+ * The persistence implementation for the guestbookweb service.
  *
  * <p>
  * Caching information and settings can be found in <code>portal.properties</code>
@@ -82,7 +82,7 @@ public class GuestbookPersistenceImpl
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this class directly. Always use <code>GuestbookUtil</code> to access the guestbook persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
+	 * Never modify or reference this class directly. Always use <code>GuestbookUtil</code> to access the guestbookweb persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
 	 */
 	public static final String FINDER_CLASS_NAME_ENTITY =
 		GuestbookImpl.class.getName();
@@ -282,12 +282,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByUuid_First(
@@ -313,11 +313,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUuid_First(
@@ -333,12 +333,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByUuid_Last(
@@ -364,11 +364,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUuid_Last(
@@ -391,13 +391,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where uuid = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where uuid = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook[] findByUuid_PrevAndNext(
@@ -632,21 +632,21 @@ public class GuestbookPersistenceImpl
 	}
 
 	private static final String _FINDER_COLUMN_UUID_UUID_2 =
-		"guestbook.uuid = ?";
+		"guestbookweb.uuid = ?";
 
 	private static final String _FINDER_COLUMN_UUID_UUID_3 =
-		"(guestbook.uuid IS NULL OR guestbook.uuid = '')";
+		"(guestbookweb.uuid IS NULL OR guestbookweb.uuid = '')";
 
 	private FinderPath _finderPathFetchByUUID_G;
 	private FinderPath _finderPathCountByUUID_G;
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookException</code> if it could not be found.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookException</code> if it could not be found.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByUUID_G(String uuid, long groupId)
@@ -678,11 +678,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUUID_G(String uuid, long groupId) {
@@ -690,12 +690,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUUID_G(
@@ -790,11 +790,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook where uuid = &#63; and groupId = &#63; from the database.
+	 * Removes the guestbookweb where uuid = &#63; and groupId = &#63; from the database.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the guestbook that was removed
+	 * @return the guestbookweb that was removed
 	 */
 	@Override
 	public Guestbook removeByUUID_G(String uuid, long groupId)
@@ -875,13 +875,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	private static final String _FINDER_COLUMN_UUID_G_UUID_2 =
-		"guestbook.uuid = ? AND ";
+		"guestbookweb.uuid = ? AND ";
 
 	private static final String _FINDER_COLUMN_UUID_G_UUID_3 =
-		"(guestbook.uuid IS NULL OR guestbook.uuid = '') AND ";
+		"(guestbookweb.uuid IS NULL OR guestbookweb.uuid = '') AND ";
 
 	private static final String _FINDER_COLUMN_UUID_G_GROUPID_2 =
-		"guestbook.groupId = ?";
+		"guestbookweb.groupId = ?";
 
 	private FinderPath _finderPathWithPaginationFindByUuid_C;
 	private FinderPath _finderPathWithoutPaginationFindByUuid_C;
@@ -1085,13 +1085,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByUuid_C_First(
@@ -1122,12 +1122,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUuid_C_First(
@@ -1145,13 +1145,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByUuid_C_Last(
@@ -1182,12 +1182,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByUuid_C_Last(
@@ -1211,14 +1211,14 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook[] findByUuid_C_PrevAndNext(
@@ -1465,13 +1465,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	private static final String _FINDER_COLUMN_UUID_C_UUID_2 =
-		"guestbook.uuid = ? AND ";
+		"guestbookweb.uuid = ? AND ";
 
 	private static final String _FINDER_COLUMN_UUID_C_UUID_3 =
-		"(guestbook.uuid IS NULL OR guestbook.uuid = '') AND ";
+		"(guestbookweb.uuid IS NULL OR guestbookweb.uuid = '') AND ";
 
 	private static final String _FINDER_COLUMN_UUID_C_COMPANYID_2 =
-		"guestbook.companyId = ?";
+		"guestbookweb.companyId = ?";
 
 	private FinderPath _finderPathWithPaginationFindByGroupId;
 	private FinderPath _finderPathWithoutPaginationFindByGroupId;
@@ -1647,12 +1647,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where groupId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByGroupId_First(
@@ -1678,11 +1678,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook in the ordered set where groupId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByGroupId_First(
@@ -1698,12 +1698,12 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where groupId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook findByGroupId_Last(
@@ -1729,11 +1729,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook in the ordered set where groupId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public Guestbook fetchByGroupId_Last(
@@ -1756,13 +1756,13 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where groupId = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where groupId = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook[] findByGroupId_PrevAndNext(
@@ -1972,7 +1972,7 @@ public class GuestbookPersistenceImpl
 	}
 
 	private static final String _FINDER_COLUMN_GROUPID_GROUPID_2 =
-		"guestbook.groupId = ?";
+		"guestbookweb.groupId = ?";
 
 	public GuestbookPersistenceImpl() {
 		setModelClass(Guestbook.class);
@@ -1988,9 +1988,9 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Caches the guestbook in the entity cache if it is enabled.
+	 * Caches the guestbookweb in the entity cache if it is enabled.
 	 *
-	 * @param guestbook the guestbook
+	 * @param guestbook the guestbookweb
 	 */
 	@Override
 	public void cacheResult(Guestbook guestbook) {
@@ -2043,7 +2043,7 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Clears the cache for the guestbook.
+	 * Clears the cache for the guestbookweb.
 	 *
 	 * <p>
 	 * The <code>EntityCache</code> and <code>FinderCache</code> are both cleared by this method.
@@ -2113,10 +2113,10 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Creates a new guestbook with the primary key. Does not add the guestbook to the database.
+	 * Creates a new guestbookweb with the primary key. Does not add the guestbookweb to the database.
 	 *
-	 * @param guestbookId the primary key for the new guestbook
-	 * @return the new guestbook
+	 * @param guestbookId the primary key for the new guestbookweb
+	 * @return the new guestbookweb
 	 */
 	@Override
 	public Guestbook create(long guestbookId) {
@@ -2135,11 +2135,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Removes the guestbookweb with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook that was removed
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb that was removed
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook remove(long guestbookId) throws NoSuchGuestbookException {
@@ -2147,11 +2147,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Removes the guestbookweb with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param primaryKey the primary key of the guestbook
-	 * @return the guestbook that was removed
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param primaryKey the primary key of the guestbookweb
+	 * @return the guestbookweb that was removed
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook remove(Serializable primaryKey)
@@ -2228,7 +2228,7 @@ public class GuestbookPersistenceImpl
 				invocationHandler = ProxyUtil.getInvocationHandler(guestbook);
 
 				throw new IllegalArgumentException(
-					"Implement ModelWrapper in guestbook proxy " +
+					"Implement ModelWrapper in guestbookweb proxy " +
 						invocationHandler.getClass());
 			}
 
@@ -2395,11 +2395,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook with the primary key or throws a <code>com.liferay.portal.kernel.exception.NoSuchModelException</code> if it could not be found.
+	 * Returns the guestbookweb with the primary key or throws a <code>com.liferay.portal.kernel.exception.NoSuchModelException</code> if it could not be found.
 	 *
-	 * @param primaryKey the primary key of the guestbook
-	 * @return the guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param primaryKey the primary key of the guestbookweb
+	 * @return the guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook findByPrimaryKey(Serializable primaryKey)
@@ -2420,11 +2420,11 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook with the primary key or throws a <code>NoSuchGuestbookException</code> if it could not be found.
+	 * Returns the guestbookweb with the primary key or throws a <code>NoSuchGuestbookException</code> if it could not be found.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook findByPrimaryKey(long guestbookId)
@@ -2434,10 +2434,10 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook with the primary key or returns <code>null</code> if it could not be found.
+	 * Returns the guestbookweb with the primary key or returns <code>null</code> if it could not be found.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook, or <code>null</code> if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb, or <code>null</code> if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public Guestbook fetchByPrimaryKey(long guestbookId) {
@@ -2664,7 +2664,7 @@ public class GuestbookPersistenceImpl
 	}
 
 	/**
-	 * Initializes the guestbook persistence.
+	 * Initializes the guestbookweb persistence.
 	 */
 	@Activate
 	public void activate() {
@@ -2775,7 +2775,7 @@ public class GuestbookPersistenceImpl
 
 		_columnBitmaskEnabled = GetterUtil.getBoolean(
 			configuration.get(
-				"value.object.column.bitmask.enabled.com.liferay.docs.guestbook.model.Guestbook"),
+				"value.object.column.bitmask.enabled.com.liferay.docs.guestbookweb.model.Guestbook"),
 			true);
 	}
 
@@ -2809,18 +2809,18 @@ public class GuestbookPersistenceImpl
 	protected FinderCache finderCache;
 
 	private static final String _SQL_SELECT_GUESTBOOK =
-		"SELECT guestbook FROM Guestbook guestbook";
+		"SELECT guestbookweb FROM Guestbook guestbookweb";
 
 	private static final String _SQL_SELECT_GUESTBOOK_WHERE =
-		"SELECT guestbook FROM Guestbook guestbook WHERE ";
+		"SELECT guestbookweb FROM Guestbook guestbookweb WHERE ";
 
 	private static final String _SQL_COUNT_GUESTBOOK =
-		"SELECT COUNT(guestbook) FROM Guestbook guestbook";
+		"SELECT COUNT(guestbookweb) FROM Guestbook guestbookweb";
 
 	private static final String _SQL_COUNT_GUESTBOOK_WHERE =
-		"SELECT COUNT(guestbook) FROM Guestbook guestbook WHERE ";
+		"SELECT COUNT(guestbookweb) FROM Guestbook guestbookweb WHERE ";
 
-	private static final String _ORDER_BY_ENTITY_ALIAS = "guestbook.";
+	private static final String _ORDER_BY_ENTITY_ALIAS = "guestbookweb.";
 
 	private static final String _NO_SUCH_ENTITY_WITH_PRIMARY_KEY =
 		"No Guestbook exists with the primary key ";

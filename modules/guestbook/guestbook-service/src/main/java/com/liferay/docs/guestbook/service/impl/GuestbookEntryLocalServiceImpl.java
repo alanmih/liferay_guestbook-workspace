@@ -31,10 +31,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * The implementation of the guestbook entry local service.
+ * The implementation of the guestbookweb entry local service.
  *
  * <p>
- * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbook.service.GuestbookEntryLocalService</code> interface.
+ * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbookweb.service.GuestbookEntryLocalService</code> interface.
  *
  * <p>
  * This is a local service. Methods of this service will not have security checks based on the propagated JAAS credentials because this service can only be accessed from within the same VM.
@@ -185,6 +185,6 @@ public class GuestbookEntryLocalServiceImpl extends GuestbookEntryLocalServiceBa
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never reference this class directly. Use <code>com.liferay.docs.guestbook.service.GuestbookEntryLocalService</code> via injection or a <code>org.osgi.util.tracker.ServiceTracker</code> or use <code>com.liferay.docs.guestbook.service.GuestbookEntryLocalServiceUtil</code>.
+	 * Never reference this class directly. Use <code>com.liferay.docs.guestbookweb.service.GuestbookEntryLocalService</code> via injection or a <code>org.osgi.util.tracker.ServiceTracker</code> or use <code>com.liferay.docs.guestbookweb.service.GuestbookEntryLocalServiceUtil</code>.
 	 */
 }

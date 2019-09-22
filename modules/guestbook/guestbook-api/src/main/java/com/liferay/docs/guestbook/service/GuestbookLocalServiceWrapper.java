@@ -36,10 +36,10 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Adds the guestbook to the database. Also notifies the appropriate model listeners.
+	 * Adds the guestbookweb to the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbook the guestbook
-	 * @return the guestbook that was added
+	 * @param guestbook the guestbookweb
+	 * @return the guestbookweb that was added
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook addGuestbook(
@@ -59,10 +59,10 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Creates a new guestbook with the primary key. Does not add the guestbook to the database.
+	 * Creates a new guestbookweb with the primary key. Does not add the guestbookweb to the database.
 	 *
-	 * @param guestbookId the primary key for the new guestbook
-	 * @return the new guestbook
+	 * @param guestbookId the primary key for the new guestbookweb
+	 * @return the new guestbookweb
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook createGuestbook(
@@ -72,10 +72,10 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Deletes the guestbook from the database. Also notifies the appropriate model listeners.
+	 * Deletes the guestbookweb from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbook the guestbook
-	 * @return the guestbook that was removed
+	 * @param guestbook the guestbookweb
+	 * @return the guestbookweb that was removed
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook deleteGuestbook(
@@ -85,11 +85,11 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Deletes the guestbook with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Deletes the guestbookweb with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook that was removed
-	 * @throws PortalException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb that was removed
+	 * @throws PortalException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook deleteGuestbook(
@@ -132,7 +132,7 @@ public class GuestbookLocalServiceWrapper
 	 * Performs a dynamic query on the database and returns a range of the matching rows.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbook.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbookweb.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param dynamicQuery the dynamic query
@@ -152,7 +152,7 @@ public class GuestbookLocalServiceWrapper
 	 * Performs a dynamic query on the database and returns an ordered range of the matching rows.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbook.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbookweb.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param dynamicQuery the dynamic query
@@ -208,11 +208,11 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Returns the guestbook matching the UUID and group.
+	 * Returns the guestbookweb matching the UUID and group.
 	 *
-	 * @param uuid the guestbook's UUID
+	 * @param uuid the guestbookweb's UUID
 	 * @param groupId the primary key of the group
-	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook
@@ -240,11 +240,11 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Returns the guestbook with the primary key.
+	 * Returns the guestbookweb with the primary key.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook
-	 * @throws PortalException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb
+	 * @throws PortalException if a guestbookweb with the primary key could not be found
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook getGuestbook(
@@ -255,12 +255,12 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Returns the guestbook matching the UUID and group.
+	 * Returns the guestbookweb matching the UUID and group.
 	 *
-	 * @param uuid the guestbook's UUID
+	 * @param uuid the guestbookweb's UUID
 	 * @param groupId the primary key of the group
-	 * @return the matching guestbook
-	 * @throws PortalException if a matching guestbook could not be found
+	 * @return the matching guestbookweb
+	 * @throws PortalException if a matching guestbookweb could not be found
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook
@@ -275,7 +275,7 @@ public class GuestbookLocalServiceWrapper
 	 * Returns a range of all the guestbooks.
 	 *
 	 * <p>
-	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbook.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
+	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>com.liferay.portal.kernel.dao.orm.QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>com.liferay.docs.guestbookweb.model.impl.GuestbookModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param start the lower bound of the range of guestbooks
@@ -391,10 +391,10 @@ public class GuestbookLocalServiceWrapper
 	}
 
 	/**
-	 * Updates the guestbook in the database or adds it if it does not yet exist. Also notifies the appropriate model listeners.
+	 * Updates the guestbookweb in the database or adds it if it does not yet exist. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbook the guestbook
-	 * @return the guestbook that was updated
+	 * @param guestbook the guestbookweb
+	 * @return the guestbookweb that was updated
 	 */
 	@Override
 	public com.liferay.docs.guestbook.model.Guestbook updateGuestbook(

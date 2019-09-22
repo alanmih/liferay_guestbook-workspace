@@ -180,9 +180,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the address of this guestbook entry.
+	 * Returns the address of this guestbookweb entry.
 	 *
-	 * @return the address of this guestbook entry
+	 * @return the address of this guestbookweb entry
 	 */
 	@Override
 	public String getAddress() {
@@ -190,9 +190,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the company ID of this guestbook entry.
+	 * Returns the company ID of this guestbookweb entry.
 	 *
-	 * @return the company ID of this guestbook entry
+	 * @return the company ID of this guestbookweb entry
 	 */
 	@Override
 	public long getCompanyId() {
@@ -200,9 +200,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the create date of this guestbook entry.
+	 * Returns the create date of this guestbookweb entry.
 	 *
-	 * @return the create date of this guestbook entry
+	 * @return the create date of this guestbookweb entry
 	 */
 	@Override
 	public Date getCreateDate() {
@@ -210,9 +210,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the email of this guestbook entry.
+	 * Returns the email of this guestbookweb entry.
 	 *
-	 * @return the email of this guestbook entry
+	 * @return the email of this guestbookweb entry
 	 */
 	@Override
 	public String getEmail() {
@@ -220,9 +220,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the entry ID of this guestbook entry.
+	 * Returns the entry ID of this guestbookweb entry.
 	 *
-	 * @return the entry ID of this guestbook entry
+	 * @return the entry ID of this guestbookweb entry
 	 */
 	@Override
 	public long getEntryId() {
@@ -230,9 +230,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the group ID of this guestbook entry.
+	 * Returns the group ID of this guestbookweb entry.
 	 *
-	 * @return the group ID of this guestbook entry
+	 * @return the group ID of this guestbookweb entry
 	 */
 	@Override
 	public long getGroupId() {
@@ -240,9 +240,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the guestbook ID of this guestbook entry.
+	 * Returns the guestbookweb ID of this guestbookweb entry.
 	 *
-	 * @return the guestbook ID of this guestbook entry
+	 * @return the guestbookweb ID of this guestbookweb entry
 	 */
 	@Override
 	public long getGuestbookId() {
@@ -250,9 +250,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the message of this guestbook entry.
+	 * Returns the message of this guestbookweb entry.
 	 *
-	 * @return the message of this guestbook entry
+	 * @return the message of this guestbookweb entry
 	 */
 	@Override
 	public String getMessage() {
@@ -260,9 +260,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the modified date of this guestbook entry.
+	 * Returns the modified date of this guestbookweb entry.
 	 *
-	 * @return the modified date of this guestbook entry
+	 * @return the modified date of this guestbookweb entry
 	 */
 	@Override
 	public Date getModifiedDate() {
@@ -270,9 +270,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the name of this guestbook entry.
+	 * Returns the name of this guestbookweb entry.
 	 *
-	 * @return the name of this guestbook entry
+	 * @return the name of this guestbookweb entry
 	 */
 	@Override
 	public String getName() {
@@ -280,9 +280,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the phone of this guestbook entry.
+	 * Returns the phone of this guestbookweb entry.
 	 *
-	 * @return the phone of this guestbook entry
+	 * @return the phone of this guestbookweb entry
 	 */
 	@Override
 	public String getPhone() {
@@ -290,9 +290,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the primary key of this guestbook entry.
+	 * Returns the primary key of this guestbookweb entry.
 	 *
-	 * @return the primary key of this guestbook entry
+	 * @return the primary key of this guestbookweb entry
 	 */
 	@Override
 	public long getPrimaryKey() {
@@ -300,9 +300,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the status of this guestbook entry.
+	 * Returns the status of this guestbookweb entry.
 	 *
-	 * @return the status of this guestbook entry
+	 * @return the status of this guestbookweb entry
 	 */
 	@Override
 	public int getStatus() {
@@ -310,9 +310,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the status by user ID of this guestbook entry.
+	 * Returns the status by user ID of this guestbookweb entry.
 	 *
-	 * @return the status by user ID of this guestbook entry
+	 * @return the status by user ID of this guestbookweb entry
 	 */
 	@Override
 	public long getStatusByUserId() {
@@ -320,9 +320,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the status by user name of this guestbook entry.
+	 * Returns the status by user name of this guestbookweb entry.
 	 *
-	 * @return the status by user name of this guestbook entry
+	 * @return the status by user name of this guestbookweb entry
 	 */
 	@Override
 	public String getStatusByUserName() {
@@ -330,9 +330,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the status by user uuid of this guestbook entry.
+	 * Returns the status by user uuid of this guestbookweb entry.
 	 *
-	 * @return the status by user uuid of this guestbook entry
+	 * @return the status by user uuid of this guestbookweb entry
 	 */
 	@Override
 	public String getStatusByUserUuid() {
@@ -340,9 +340,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the status date of this guestbook entry.
+	 * Returns the status date of this guestbookweb entry.
 	 *
-	 * @return the status date of this guestbook entry
+	 * @return the status date of this guestbookweb entry
 	 */
 	@Override
 	public Date getStatusDate() {
@@ -350,9 +350,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the user ID of this guestbook entry.
+	 * Returns the user ID of this guestbookweb entry.
 	 *
-	 * @return the user ID of this guestbook entry
+	 * @return the user ID of this guestbookweb entry
 	 */
 	@Override
 	public long getUserId() {
@@ -360,9 +360,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the user name of this guestbook entry.
+	 * Returns the user name of this guestbookweb entry.
 	 *
-	 * @return the user name of this guestbook entry
+	 * @return the user name of this guestbookweb entry
 	 */
 	@Override
 	public String getUserName() {
@@ -370,9 +370,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the user uuid of this guestbook entry.
+	 * Returns the user uuid of this guestbookweb entry.
 	 *
-	 * @return the user uuid of this guestbook entry
+	 * @return the user uuid of this guestbookweb entry
 	 */
 	@Override
 	public String getUserUuid() {
@@ -380,9 +380,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns the uuid of this guestbook entry.
+	 * Returns the uuid of this guestbookweb entry.
 	 *
-	 * @return the uuid of this guestbook entry
+	 * @return the uuid of this guestbookweb entry
 	 */
 	@Override
 	public String getUuid() {
@@ -390,9 +390,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is approved.
+	 * Returns <code>true</code> if this guestbookweb entry is approved.
 	 *
-	 * @return <code>true</code> if this guestbook entry is approved; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is approved; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isApproved() {
@@ -400,9 +400,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is denied.
+	 * Returns <code>true</code> if this guestbookweb entry is denied.
 	 *
-	 * @return <code>true</code> if this guestbook entry is denied; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is denied; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isDenied() {
@@ -410,9 +410,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is a draft.
+	 * Returns <code>true</code> if this guestbookweb entry is a draft.
 	 *
-	 * @return <code>true</code> if this guestbook entry is a draft; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is a draft; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isDraft() {
@@ -420,9 +420,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is expired.
+	 * Returns <code>true</code> if this guestbookweb entry is expired.
 	 *
-	 * @return <code>true</code> if this guestbook entry is expired; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is expired; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isExpired() {
@@ -430,9 +430,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is inactive.
+	 * Returns <code>true</code> if this guestbookweb entry is inactive.
 	 *
-	 * @return <code>true</code> if this guestbook entry is inactive; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is inactive; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isInactive() {
@@ -440,9 +440,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is incomplete.
+	 * Returns <code>true</code> if this guestbookweb entry is incomplete.
 	 *
-	 * @return <code>true</code> if this guestbook entry is incomplete; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is incomplete; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isIncomplete() {
@@ -450,9 +450,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is pending.
+	 * Returns <code>true</code> if this guestbookweb entry is pending.
 	 *
-	 * @return <code>true</code> if this guestbook entry is pending; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is pending; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isPending() {
@@ -460,9 +460,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Returns <code>true</code> if this guestbook entry is scheduled.
+	 * Returns <code>true</code> if this guestbookweb entry is scheduled.
 	 *
-	 * @return <code>true</code> if this guestbook entry is scheduled; <code>false</code> otherwise
+	 * @return <code>true</code> if this guestbookweb entry is scheduled; <code>false</code> otherwise
 	 */
 	@Override
 	public boolean isScheduled() {
@@ -475,9 +475,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the address of this guestbook entry.
+	 * Sets the address of this guestbookweb entry.
 	 *
-	 * @param address the address of this guestbook entry
+	 * @param address the address of this guestbookweb entry
 	 */
 	@Override
 	public void setAddress(String address) {
@@ -485,9 +485,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the company ID of this guestbook entry.
+	 * Sets the company ID of this guestbookweb entry.
 	 *
-	 * @param companyId the company ID of this guestbook entry
+	 * @param companyId the company ID of this guestbookweb entry
 	 */
 	@Override
 	public void setCompanyId(long companyId) {
@@ -495,9 +495,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the create date of this guestbook entry.
+	 * Sets the create date of this guestbookweb entry.
 	 *
-	 * @param createDate the create date of this guestbook entry
+	 * @param createDate the create date of this guestbookweb entry
 	 */
 	@Override
 	public void setCreateDate(Date createDate) {
@@ -505,9 +505,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the email of this guestbook entry.
+	 * Sets the email of this guestbookweb entry.
 	 *
-	 * @param email the email of this guestbook entry
+	 * @param email the email of this guestbookweb entry
 	 */
 	@Override
 	public void setEmail(String email) {
@@ -515,9 +515,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the entry ID of this guestbook entry.
+	 * Sets the entry ID of this guestbookweb entry.
 	 *
-	 * @param entryId the entry ID of this guestbook entry
+	 * @param entryId the entry ID of this guestbookweb entry
 	 */
 	@Override
 	public void setEntryId(long entryId) {
@@ -525,9 +525,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the group ID of this guestbook entry.
+	 * Sets the group ID of this guestbookweb entry.
 	 *
-	 * @param groupId the group ID of this guestbook entry
+	 * @param groupId the group ID of this guestbookweb entry
 	 */
 	@Override
 	public void setGroupId(long groupId) {
@@ -535,9 +535,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the guestbook ID of this guestbook entry.
+	 * Sets the guestbookweb ID of this guestbookweb entry.
 	 *
-	 * @param guestbookId the guestbook ID of this guestbook entry
+	 * @param guestbookId the guestbookweb ID of this guestbookweb entry
 	 */
 	@Override
 	public void setGuestbookId(long guestbookId) {
@@ -545,9 +545,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the message of this guestbook entry.
+	 * Sets the message of this guestbookweb entry.
 	 *
-	 * @param message the message of this guestbook entry
+	 * @param message the message of this guestbookweb entry
 	 */
 	@Override
 	public void setMessage(String message) {
@@ -555,9 +555,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the modified date of this guestbook entry.
+	 * Sets the modified date of this guestbookweb entry.
 	 *
-	 * @param modifiedDate the modified date of this guestbook entry
+	 * @param modifiedDate the modified date of this guestbookweb entry
 	 */
 	@Override
 	public void setModifiedDate(Date modifiedDate) {
@@ -565,9 +565,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the name of this guestbook entry.
+	 * Sets the name of this guestbookweb entry.
 	 *
-	 * @param name the name of this guestbook entry
+	 * @param name the name of this guestbookweb entry
 	 */
 	@Override
 	public void setName(String name) {
@@ -575,9 +575,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the phone of this guestbook entry.
+	 * Sets the phone of this guestbookweb entry.
 	 *
-	 * @param phone the phone of this guestbook entry
+	 * @param phone the phone of this guestbookweb entry
 	 */
 	@Override
 	public void setPhone(String phone) {
@@ -585,9 +585,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the primary key of this guestbook entry.
+	 * Sets the primary key of this guestbookweb entry.
 	 *
-	 * @param primaryKey the primary key of this guestbook entry
+	 * @param primaryKey the primary key of this guestbookweb entry
 	 */
 	@Override
 	public void setPrimaryKey(long primaryKey) {
@@ -595,9 +595,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the status of this guestbook entry.
+	 * Sets the status of this guestbookweb entry.
 	 *
-	 * @param status the status of this guestbook entry
+	 * @param status the status of this guestbookweb entry
 	 */
 	@Override
 	public void setStatus(int status) {
@@ -605,9 +605,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the status by user ID of this guestbook entry.
+	 * Sets the status by user ID of this guestbookweb entry.
 	 *
-	 * @param statusByUserId the status by user ID of this guestbook entry
+	 * @param statusByUserId the status by user ID of this guestbookweb entry
 	 */
 	@Override
 	public void setStatusByUserId(long statusByUserId) {
@@ -615,9 +615,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the status by user name of this guestbook entry.
+	 * Sets the status by user name of this guestbookweb entry.
 	 *
-	 * @param statusByUserName the status by user name of this guestbook entry
+	 * @param statusByUserName the status by user name of this guestbookweb entry
 	 */
 	@Override
 	public void setStatusByUserName(String statusByUserName) {
@@ -625,9 +625,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the status by user uuid of this guestbook entry.
+	 * Sets the status by user uuid of this guestbookweb entry.
 	 *
-	 * @param statusByUserUuid the status by user uuid of this guestbook entry
+	 * @param statusByUserUuid the status by user uuid of this guestbookweb entry
 	 */
 	@Override
 	public void setStatusByUserUuid(String statusByUserUuid) {
@@ -635,9 +635,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the status date of this guestbook entry.
+	 * Sets the status date of this guestbookweb entry.
 	 *
-	 * @param statusDate the status date of this guestbook entry
+	 * @param statusDate the status date of this guestbookweb entry
 	 */
 	@Override
 	public void setStatusDate(Date statusDate) {
@@ -645,9 +645,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the user ID of this guestbook entry.
+	 * Sets the user ID of this guestbookweb entry.
 	 *
-	 * @param userId the user ID of this guestbook entry
+	 * @param userId the user ID of this guestbookweb entry
 	 */
 	@Override
 	public void setUserId(long userId) {
@@ -655,9 +655,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the user name of this guestbook entry.
+	 * Sets the user name of this guestbookweb entry.
 	 *
-	 * @param userName the user name of this guestbook entry
+	 * @param userName the user name of this guestbookweb entry
 	 */
 	@Override
 	public void setUserName(String userName) {
@@ -665,9 +665,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the user uuid of this guestbook entry.
+	 * Sets the user uuid of this guestbookweb entry.
 	 *
-	 * @param userUuid the user uuid of this guestbook entry
+	 * @param userUuid the user uuid of this guestbookweb entry
 	 */
 	@Override
 	public void setUserUuid(String userUuid) {
@@ -675,9 +675,9 @@ public class GuestbookEntryWrapper
 	}
 
 	/**
-	 * Sets the uuid of this guestbook entry.
+	 * Sets the uuid of this guestbookweb entry.
 	 *
-	 * @param uuid the uuid of this guestbook entry
+	 * @param uuid the uuid of this guestbookweb entry
 	 */
 	@Override
 	public void setUuid(String uuid) {

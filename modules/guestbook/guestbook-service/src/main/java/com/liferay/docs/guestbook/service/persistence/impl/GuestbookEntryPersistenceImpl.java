@@ -65,7 +65,7 @@ import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 
 /**
- * The persistence implementation for the guestbook entry service.
+ * The persistence implementation for the guestbookweb entry service.
  *
  * <p>
  * Caching information and settings can be found in <code>portal.properties</code>
@@ -83,7 +83,7 @@ public class GuestbookEntryPersistenceImpl
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this class directly. Always use <code>GuestbookEntryUtil</code> to access the guestbook entry persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
+	 * Never modify or reference this class directly. Always use <code>GuestbookEntryUtil</code> to access the guestbookweb entry persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this class.
 	 */
 	public static final String FINDER_CLASS_NAME_ENTITY =
 		GuestbookEntryImpl.class.getName();
@@ -102,10 +102,10 @@ public class GuestbookEntryPersistenceImpl
 	private FinderPath _finderPathCountByUuid;
 
 	/**
-	 * Returns all the guestbook entries where uuid = &#63;.
+	 * Returns all the guestbookweb entries where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
-	 * @return the matching guestbook entries
+	 * @return the matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid(String uuid) {
@@ -113,16 +113,16 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns a range of all the guestbook entries where uuid = &#63;.
+	 * Returns a range of all the guestbookweb entries where uuid = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param uuid the uuid
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
-	 * @return the range of matching guestbook entries
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
+	 * @return the range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid(String uuid, int start, int end) {
@@ -130,17 +130,17 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where uuid = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where uuid = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param uuid the uuid
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid(
@@ -151,18 +151,18 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where uuid = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where uuid = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param uuid the uuid
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid(
@@ -283,12 +283,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByUuid_First(
@@ -315,11 +315,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUuid_First(
@@ -335,12 +335,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByUuid_Last(
@@ -367,11 +367,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUuid_Last(
@@ -394,13 +394,13 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entries before and after the current guestbook entry in the ordered set where uuid = &#63;.
+	 * Returns the guestbookweb entries before and after the current guestbookweb entry in the ordered set where uuid = &#63;.
 	 *
-	 * @param entryId the primary key of the current guestbook entry
+	 * @param entryId the primary key of the current guestbookweb entry
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry[] findByUuid_PrevAndNext(
@@ -558,7 +558,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes all the guestbook entries where uuid = &#63; from the database.
+	 * Removes all the guestbookweb entries where uuid = &#63; from the database.
 	 *
 	 * @param uuid the uuid
 	 */
@@ -572,10 +572,10 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the number of guestbook entries where uuid = &#63;.
+	 * Returns the number of guestbookweb entries where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
-	 * @return the number of matching guestbook entries
+	 * @return the number of matching guestbookweb entries
 	 */
 	@Override
 	public int countByUuid(String uuid) {
@@ -645,12 +645,12 @@ public class GuestbookEntryPersistenceImpl
 	private FinderPath _finderPathCountByUUID_G;
 
 	/**
-	 * Returns the guestbook entry where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookEntryException</code> if it could not be found.
+	 * Returns the guestbookweb entry where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookEntryException</code> if it could not be found.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByUUID_G(String uuid, long groupId)
@@ -682,11 +682,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entry where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
+	 * Returns the guestbookweb entry where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUUID_G(String uuid, long groupId) {
@@ -694,12 +694,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entry where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
+	 * Returns the guestbookweb entry where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUUID_G(
@@ -794,11 +794,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook entry where uuid = &#63; and groupId = &#63; from the database.
+	 * Removes the guestbookweb entry where uuid = &#63; and groupId = &#63; from the database.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the guestbook entry that was removed
+	 * @return the guestbookweb entry that was removed
 	 */
 	@Override
 	public GuestbookEntry removeByUUID_G(String uuid, long groupId)
@@ -810,11 +810,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the number of guestbook entries where uuid = &#63; and groupId = &#63;.
+	 * Returns the number of guestbookweb entries where uuid = &#63; and groupId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the number of matching guestbook entries
+	 * @return the number of matching guestbookweb entries
 	 */
 	@Override
 	public int countByUUID_G(String uuid, long groupId) {
@@ -892,11 +892,11 @@ public class GuestbookEntryPersistenceImpl
 	private FinderPath _finderPathCountByUuid_C;
 
 	/**
-	 * Returns all the guestbook entries where uuid = &#63; and companyId = &#63;.
+	 * Returns all the guestbookweb entries where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
-	 * @return the matching guestbook entries
+	 * @return the matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid_C(String uuid, long companyId) {
@@ -905,7 +905,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns a range of all the guestbook entries where uuid = &#63; and companyId = &#63;.
+	 * Returns a range of all the guestbookweb entries where uuid = &#63; and companyId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
@@ -913,9 +913,9 @@ public class GuestbookEntryPersistenceImpl
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
-	 * @return the range of matching guestbook entries
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
+	 * @return the range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid_C(
@@ -925,7 +925,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where uuid = &#63; and companyId = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where uuid = &#63; and companyId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
@@ -933,10 +933,10 @@ public class GuestbookEntryPersistenceImpl
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid_C(
@@ -948,7 +948,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where uuid = &#63; and companyId = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where uuid = &#63; and companyId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
@@ -956,11 +956,11 @@ public class GuestbookEntryPersistenceImpl
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByUuid_C(
@@ -1089,13 +1089,13 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByUuid_C_First(
@@ -1126,12 +1126,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUuid_C_First(
@@ -1149,13 +1149,13 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByUuid_C_Last(
@@ -1186,12 +1186,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByUuid_C_Last(
@@ -1215,14 +1215,14 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entries before and after the current guestbook entry in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the guestbookweb entries before and after the current guestbookweb entry in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
-	 * @param entryId the primary key of the current guestbook entry
+	 * @param entryId the primary key of the current guestbookweb entry
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry[] findByUuid_C_PrevAndNext(
@@ -1387,7 +1387,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes all the guestbook entries where uuid = &#63; and companyId = &#63; from the database.
+	 * Removes all the guestbookweb entries where uuid = &#63; and companyId = &#63; from the database.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
@@ -1404,11 +1404,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the number of guestbook entries where uuid = &#63; and companyId = &#63;.
+	 * Returns the number of guestbookweb entries where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
-	 * @return the number of matching guestbook entries
+	 * @return the number of matching guestbookweb entries
 	 */
 	@Override
 	public int countByUuid_C(String uuid, long companyId) {
@@ -1486,11 +1486,11 @@ public class GuestbookEntryPersistenceImpl
 	private FinderPath _finderPathCountByG_G;
 
 	/**
-	 * Returns all the guestbook entries where groupId = &#63; and guestbookId = &#63;.
+	 * Returns all the guestbookweb entries where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
-	 * @return the matching guestbook entries
+	 * @param guestbookId the guestbookweb ID
+	 * @return the matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByG_G(long groupId, long guestbookId) {
@@ -1499,17 +1499,17 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns a range of all the guestbook entries where groupId = &#63; and guestbookId = &#63;.
+	 * Returns a range of all the guestbookweb entries where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
-	 * @return the range of matching guestbook entries
+	 * @param guestbookId the guestbookweb ID
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
+	 * @return the range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByG_G(
@@ -1519,18 +1519,18 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where groupId = &#63; and guestbookId = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param guestbookId the guestbookweb ID
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByG_G(
@@ -1542,19 +1542,19 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries where groupId = &#63; and guestbookId = &#63;.
+	 * Returns an ordered range of all the guestbookweb entries where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param guestbookId the guestbookweb ID
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the ordered range of matching guestbook entries
+	 * @return the ordered range of matching guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findByG_G(
@@ -1670,13 +1670,13 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByG_G_First(
@@ -1707,12 +1707,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the first guestbook entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the first guestbookweb entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the first matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByG_G_First(
@@ -1730,13 +1730,13 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry findByG_G_Last(
@@ -1767,12 +1767,12 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the last guestbook entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the last guestbookweb entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook entry, or <code>null</code> if a matching guestbook entry could not be found
+	 * @return the last matching guestbookweb entry, or <code>null</code> if a matching guestbookweb entry could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByG_G_Last(
@@ -1796,14 +1796,14 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entries before and after the current guestbook entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the guestbookweb entries before and after the current guestbookweb entry in the ordered set where groupId = &#63; and guestbookId = &#63;.
 	 *
-	 * @param entryId the primary key of the current guestbook entry
+	 * @param entryId the primary key of the current guestbookweb entry
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry[] findByG_G_PrevAndNext(
@@ -1955,10 +1955,10 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes all the guestbook entries where groupId = &#63; and guestbookId = &#63; from the database.
+	 * Removes all the guestbookweb entries where groupId = &#63; and guestbookId = &#63; from the database.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
+	 * @param guestbookId the guestbookweb ID
 	 */
 	@Override
 	public void removeByG_G(long groupId, long guestbookId) {
@@ -1972,11 +1972,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the number of guestbook entries where groupId = &#63; and guestbookId = &#63;.
+	 * Returns the number of guestbookweb entries where groupId = &#63; and guestbookId = &#63;.
 	 *
 	 * @param groupId the group ID
-	 * @param guestbookId the guestbook ID
-	 * @return the number of matching guestbook entries
+	 * @param guestbookId the guestbookweb ID
+	 * @return the number of matching guestbookweb entries
 	 */
 	@Override
 	public int countByG_G(long groupId, long guestbookId) {
@@ -2047,9 +2047,9 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Caches the guestbook entry in the entity cache if it is enabled.
+	 * Caches the guestbookweb entry in the entity cache if it is enabled.
 	 *
-	 * @param guestbookEntry the guestbook entry
+	 * @param guestbookEntry the guestbookweb entry
 	 */
 	@Override
 	public void cacheResult(GuestbookEntry guestbookEntry) {
@@ -2068,9 +2068,9 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Caches the guestbook entries in the entity cache if it is enabled.
+	 * Caches the guestbookweb entries in the entity cache if it is enabled.
 	 *
-	 * @param guestbookEntries the guestbook entries
+	 * @param guestbookEntries the guestbookweb entries
 	 */
 	@Override
 	public void cacheResult(List<GuestbookEntry> guestbookEntries) {
@@ -2088,7 +2088,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Clears the cache for all guestbook entries.
+	 * Clears the cache for all guestbookweb entries.
 	 *
 	 * <p>
 	 * The <code>EntityCache</code> and <code>FinderCache</code> are both cleared by this method.
@@ -2104,7 +2104,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Clears the cache for the guestbook entry.
+	 * Clears the cache for the guestbookweb entry.
 	 *
 	 * <p>
 	 * The <code>EntityCache</code> and <code>FinderCache</code> are both cleared by this method.
@@ -2178,10 +2178,10 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Creates a new guestbook entry with the primary key. Does not add the guestbook entry to the database.
+	 * Creates a new guestbookweb entry with the primary key. Does not add the guestbookweb entry to the database.
 	 *
-	 * @param entryId the primary key for the new guestbook entry
-	 * @return the new guestbook entry
+	 * @param entryId the primary key for the new guestbookweb entry
+	 * @return the new guestbookweb entry
 	 */
 	@Override
 	public GuestbookEntry create(long entryId) {
@@ -2200,11 +2200,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook entry with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Removes the guestbookweb entry with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param entryId the primary key of the guestbook entry
-	 * @return the guestbook entry that was removed
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @param entryId the primary key of the guestbookweb entry
+	 * @return the guestbookweb entry that was removed
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry remove(long entryId)
@@ -2214,11 +2214,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes the guestbook entry with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Removes the guestbookweb entry with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param primaryKey the primary key of the guestbook entry
-	 * @return the guestbook entry that was removed
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @param primaryKey the primary key of the guestbookweb entry
+	 * @return the guestbookweb entry that was removed
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry remove(Serializable primaryKey)
@@ -2474,11 +2474,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entry with the primary key or throws a <code>com.liferay.portal.kernel.exception.NoSuchModelException</code> if it could not be found.
+	 * Returns the guestbookweb entry with the primary key or throws a <code>com.liferay.portal.kernel.exception.NoSuchModelException</code> if it could not be found.
 	 *
-	 * @param primaryKey the primary key of the guestbook entry
-	 * @return the guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @param primaryKey the primary key of the guestbookweb entry
+	 * @return the guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry findByPrimaryKey(Serializable primaryKey)
@@ -2499,11 +2499,11 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entry with the primary key or throws a <code>NoSuchGuestbookEntryException</code> if it could not be found.
+	 * Returns the guestbookweb entry with the primary key or throws a <code>NoSuchGuestbookEntryException</code> if it could not be found.
 	 *
-	 * @param entryId the primary key of the guestbook entry
-	 * @return the guestbook entry
-	 * @throws NoSuchGuestbookEntryException if a guestbook entry with the primary key could not be found
+	 * @param entryId the primary key of the guestbookweb entry
+	 * @return the guestbookweb entry
+	 * @throws NoSuchGuestbookEntryException if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry findByPrimaryKey(long entryId)
@@ -2513,10 +2513,10 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the guestbook entry with the primary key or returns <code>null</code> if it could not be found.
+	 * Returns the guestbookweb entry with the primary key or returns <code>null</code> if it could not be found.
 	 *
-	 * @param entryId the primary key of the guestbook entry
-	 * @return the guestbook entry, or <code>null</code> if a guestbook entry with the primary key could not be found
+	 * @param entryId the primary key of the guestbookweb entry
+	 * @return the guestbookweb entry, or <code>null</code> if a guestbookweb entry with the primary key could not be found
 	 */
 	@Override
 	public GuestbookEntry fetchByPrimaryKey(long entryId) {
@@ -2524,9 +2524,9 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns all the guestbook entries.
+	 * Returns all the guestbookweb entries.
 	 *
-	 * @return the guestbook entries
+	 * @return the guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findAll() {
@@ -2534,15 +2534,15 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns a range of all the guestbook entries.
+	 * Returns a range of all the guestbookweb entries.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
-	 * @return the range of guestbook entries
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
+	 * @return the range of guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findAll(int start, int end) {
@@ -2550,16 +2550,16 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries.
+	 * Returns an ordered range of all the guestbookweb entries.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
-	 * @return the ordered range of guestbook entries
+	 * @return the ordered range of guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findAll(
@@ -2570,17 +2570,17 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns an ordered range of all the guestbook entries.
+	 * Returns an ordered range of all the guestbookweb entries.
 	 *
 	 * <p>
 	 * Useful when paginating results. Returns a maximum of <code>end - start</code> instances. <code>start</code> and <code>end</code> are not primary keys, they are indexes in the result set. Thus, <code>0</code> refers to the first result in the set. Setting both <code>start</code> and <code>end</code> to <code>QueryUtil#ALL_POS</code> will return the full result set. If <code>orderByComparator</code> is specified, then the query will include the given ORDER BY logic. If <code>orderByComparator</code> is absent and pagination is required (<code>start</code> and <code>end</code> are not <code>QueryUtil#ALL_POS</code>), then the query will include the default ORDER BY logic from <code>GuestbookEntryModelImpl</code>. If both <code>orderByComparator</code> and pagination are absent, for performance reasons, the query will not have an ORDER BY clause and the returned result set will be sorted on by the primary key in an ascending order.
 	 * </p>
 	 *
-	 * @param start the lower bound of the range of guestbook entries
-	 * @param end the upper bound of the range of guestbook entries (not inclusive)
+	 * @param start the lower bound of the range of guestbookweb entries
+	 * @param end the upper bound of the range of guestbookweb entries (not inclusive)
 	 * @param orderByComparator the comparator to order the results by (optionally <code>null</code>)
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the ordered range of guestbook entries
+	 * @return the ordered range of guestbookweb entries
 	 */
 	@Override
 	public List<GuestbookEntry> findAll(
@@ -2671,7 +2671,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Removes all the guestbook entries from the database.
+	 * Removes all the guestbookweb entries from the database.
 	 *
 	 */
 	@Override
@@ -2682,9 +2682,9 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Returns the number of guestbook entries.
+	 * Returns the number of guestbookweb entries.
 	 *
-	 * @return the number of guestbook entries
+	 * @return the number of guestbookweb entries
 	 */
 	@Override
 	public int countAll() {
@@ -2744,7 +2744,7 @@ public class GuestbookEntryPersistenceImpl
 	}
 
 	/**
-	 * Initializes the guestbook entry persistence.
+	 * Initializes the guestbookweb entry persistence.
 	 */
 	@Activate
 	public void activate() {
@@ -2860,7 +2860,7 @@ public class GuestbookEntryPersistenceImpl
 
 		_columnBitmaskEnabled = GetterUtil.getBoolean(
 			configuration.get(
-				"value.object.column.bitmask.enabled.com.liferay.docs.guestbook.model.GuestbookEntry"),
+				"value.object.column.bitmask.enabled.com.liferay.docs.guestbookweb.model.GuestbookEntry"),
 			true);
 	}
 

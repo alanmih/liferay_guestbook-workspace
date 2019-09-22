@@ -38,7 +38,7 @@ public abstract class GuestbookBaseImpl
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this class directly. All methods that expect a guestbook model instance should use the <code>Guestbook</code> interface instead.
+	 * Never modify or reference this class directly. All methods that expect a guestbookweb model instance should use the <code>Guestbook</code> interface instead.
 	 */
 	@Override
 	public void persist() {

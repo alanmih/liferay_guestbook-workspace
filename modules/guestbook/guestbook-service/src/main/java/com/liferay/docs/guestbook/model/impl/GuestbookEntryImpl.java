@@ -20,7 +20,7 @@ import org.osgi.annotation.versioning.ProviderType;
  * The extended model implementation for the GuestbookEntry service. Represents a row in the &quot;GB_GuestbookEntry&quot; database table, with each column mapped to a property of this class.
  *
  * <p>
- * Helper methods and all application logic should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbook.model.GuestbookEntry<code> interface.
+ * Helper methods and all application logic should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.docs.guestbookweb.model.GuestbookEntry<code> interface.
  * </p>
  *
  * @author Liferay
@@ -31,7 +31,7 @@ public class GuestbookEntryImpl extends GuestbookEntryBaseImpl {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never reference this class directly. All methods that expect a guestbook entry model instance should use the {@link com.liferay.docs.guestbook.model.GuestbookEntry} interface instead.
+	 * Never reference this class directly. All methods that expect a guestbookweb entry model instance should use the {@link com.liferay.docs.guestbookweb.model.GuestbookEntry} interface instead.
 	 */
 	public GuestbookEntryImpl() {
 	}

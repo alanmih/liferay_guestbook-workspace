@@ -34,7 +34,7 @@ public interface Guestbook extends GuestbookModel, PersistedModel {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify this interface directly. Add methods to <code>com.liferay.docs.guestbook.model.impl.GuestbookImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
+	 * Never modify this interface directly. Add methods to <code>com.liferay.docs.guestbookweb.model.impl.GuestbookImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
 	 */
 	public static final Accessor<Guestbook, Long> GUESTBOOK_ID_ACCESSOR =
 		new Accessor<Guestbook, Long>() {

@@ -21,7 +21,7 @@ import com.liferay.portal.kernel.service.persistence.BasePersistence;
 import org.osgi.annotation.versioning.ProviderType;
 
 /**
- * The persistence interface for the guestbook service.
+ * The persistence interface for the guestbookweb service.
  *
  * <p>
  * Caching information and settings can be found in <code>portal.properties</code>
@@ -37,7 +37,7 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this interface directly. Always use {@link GuestbookUtil} to access the guestbook persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this interface.
+	 * Never modify or reference this interface directly. Always use {@link GuestbookUtil} to access the guestbookweb persistence. Modify <code>service.xml</code> and rerun ServiceBuilder to regenerate this interface.
 	 */
 
 	/**
@@ -102,12 +102,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		boolean retrieveFromCache);
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByUuid_First(
 			String uuid,
@@ -116,11 +116,11 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUuid_First(
 		String uuid,
@@ -128,12 +128,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByUuid_Last(
 			String uuid,
@@ -142,11 +142,11 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUuid_Last(
 		String uuid,
@@ -154,13 +154,13 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where uuid = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where uuid = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param uuid the uuid
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook[] findByUuid_PrevAndNext(
 			long guestbookId, String uuid,
@@ -184,42 +184,42 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 	public int countByUuid(String uuid);
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookException</code> if it could not be found.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or throws a <code>NoSuchGuestbookException</code> if it could not be found.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByUUID_G(String uuid, long groupId)
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found. Uses the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUUID_G(String uuid, long groupId);
 
 	/**
-	 * Returns the guestbook where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
+	 * Returns the guestbookweb where uuid = &#63; and groupId = &#63; or returns <code>null</code> if it could not be found, optionally using the finder cache.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
 	 * @param retrieveFromCache whether to retrieve from the finder cache
-	 * @return the matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUUID_G(
 		String uuid, long groupId, boolean retrieveFromCache);
 
 	/**
-	 * Removes the guestbook where uuid = &#63; and groupId = &#63; from the database.
+	 * Removes the guestbookweb where uuid = &#63; and groupId = &#63; from the database.
 	 *
 	 * @param uuid the uuid
 	 * @param groupId the group ID
-	 * @return the guestbook that was removed
+	 * @return the guestbookweb that was removed
 	 */
 	public Guestbook removeByUUID_G(String uuid, long groupId)
 		throws NoSuchGuestbookException;
@@ -299,13 +299,13 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		boolean retrieveFromCache);
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByUuid_C_First(
 			String uuid, long companyId,
@@ -314,12 +314,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the first guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUuid_C_First(
 		String uuid, long companyId,
@@ -327,13 +327,13 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByUuid_C_Last(
 			String uuid, long companyId,
@@ -342,12 +342,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the last guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByUuid_C_Last(
 		String uuid, long companyId,
@@ -355,14 +355,14 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where uuid = &#63; and companyId = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where uuid = &#63; and companyId = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param uuid the uuid
 	 * @param companyId the company ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook[] findByUuid_C_PrevAndNext(
 			long guestbookId, String uuid, long companyId,
@@ -449,12 +449,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		boolean retrieveFromCache);
 
 	/**
-	 * Returns the first guestbook in the ordered set where groupId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the first matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByGroupId_First(
 			long groupId,
@@ -463,11 +463,11 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the first guestbook in the ordered set where groupId = &#63;.
+	 * Returns the first guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the first matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the first matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByGroupId_First(
 		long groupId,
@@ -475,12 +475,12 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the last guestbook in the ordered set where groupId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook
-	 * @throws NoSuchGuestbookException if a matching guestbook could not be found
+	 * @return the last matching guestbookweb
+	 * @throws NoSuchGuestbookException if a matching guestbookweb could not be found
 	 */
 	public Guestbook findByGroupId_Last(
 			long groupId,
@@ -489,11 +489,11 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the last guestbook in the ordered set where groupId = &#63;.
+	 * Returns the last guestbookweb in the ordered set where groupId = &#63;.
 	 *
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the last matching guestbook, or <code>null</code> if a matching guestbook could not be found
+	 * @return the last matching guestbookweb, or <code>null</code> if a matching guestbookweb could not be found
 	 */
 	public Guestbook fetchByGroupId_Last(
 		long groupId,
@@ -501,13 +501,13 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 			orderByComparator);
 
 	/**
-	 * Returns the guestbooks before and after the current guestbook in the ordered set where groupId = &#63;.
+	 * Returns the guestbooks before and after the current guestbookweb in the ordered set where groupId = &#63;.
 	 *
-	 * @param guestbookId the primary key of the current guestbook
+	 * @param guestbookId the primary key of the current guestbookweb
 	 * @param groupId the group ID
 	 * @param orderByComparator the comparator to order the set by (optionally <code>null</code>)
-	 * @return the previous, current, and next guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @return the previous, current, and next guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook[] findByGroupId_PrevAndNext(
 			long guestbookId, long groupId,
@@ -531,9 +531,9 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 	public int countByGroupId(long groupId);
 
 	/**
-	 * Caches the guestbook in the entity cache if it is enabled.
+	 * Caches the guestbookweb in the entity cache if it is enabled.
 	 *
-	 * @param guestbook the guestbook
+	 * @param guestbook the guestbookweb
 	 */
 	public void cacheResult(Guestbook guestbook);
 
@@ -545,39 +545,39 @@ public interface GuestbookPersistence extends BasePersistence<Guestbook> {
 	public void cacheResult(java.util.List<Guestbook> guestbooks);
 
 	/**
-	 * Creates a new guestbook with the primary key. Does not add the guestbook to the database.
+	 * Creates a new guestbookweb with the primary key. Does not add the guestbookweb to the database.
 	 *
-	 * @param guestbookId the primary key for the new guestbook
-	 * @return the new guestbook
+	 * @param guestbookId the primary key for the new guestbookweb
+	 * @return the new guestbookweb
 	 */
 	public Guestbook create(long guestbookId);
 
 	/**
-	 * Removes the guestbook with the primary key from the database. Also notifies the appropriate model listeners.
+	 * Removes the guestbookweb with the primary key from the database. Also notifies the appropriate model listeners.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook that was removed
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb that was removed
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook remove(long guestbookId) throws NoSuchGuestbookException;
 
 	public Guestbook updateImpl(Guestbook guestbook);
 
 	/**
-	 * Returns the guestbook with the primary key or throws a <code>NoSuchGuestbookException</code> if it could not be found.
+	 * Returns the guestbookweb with the primary key or throws a <code>NoSuchGuestbookException</code> if it could not be found.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook
-	 * @throws NoSuchGuestbookException if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb
+	 * @throws NoSuchGuestbookException if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook findByPrimaryKey(long guestbookId)
 		throws NoSuchGuestbookException;
 
 	/**
-	 * Returns the guestbook with the primary key or returns <code>null</code> if it could not be found.
+	 * Returns the guestbookweb with the primary key or returns <code>null</code> if it could not be found.
 	 *
-	 * @param guestbookId the primary key of the guestbook
-	 * @return the guestbook, or <code>null</code> if a guestbook with the primary key could not be found
+	 * @param guestbookId the primary key of the guestbookweb
+	 * @return the guestbookweb, or <code>null</code> if a guestbookweb with the primary key could not be found
 	 */
 	public Guestbook fetchByPrimaryKey(long guestbookId);
 

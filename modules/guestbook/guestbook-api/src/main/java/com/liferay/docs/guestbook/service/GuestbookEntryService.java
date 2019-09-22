@@ -45,7 +45,7 @@ public interface GuestbookEntryService extends BaseService {
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this interface directly. Always use {@link GuestbookEntryServiceUtil} to access the guestbook entry remote service. Add custom service methods to <code>com.liferay.docs.guestbook.service.impl.GuestbookEntryServiceImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
+	 * Never modify or reference this interface directly. Always use {@link GuestbookEntryServiceUtil} to access the guestbookweb entry remote service. Add custom service methods to <code>com.liferay.docs.guestbookweb.service.impl.GuestbookEntryServiceImpl</code> and rerun ServiceBuilder to automatically copy the method declarations to this interface.
 	 */
 
 	/**

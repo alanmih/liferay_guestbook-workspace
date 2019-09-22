@@ -74,7 +74,7 @@ public class GuestbookEntryModelImpl
 	/*
 	 * NOTE FOR DEVELOPERS:
 	 *
-	 * Never modify or reference this class directly. All methods that expect a guestbook entry model instance should use the <code>GuestbookEntry</code> interface instead.
+	 * Never modify or reference this class directly. All methods that expect a guestbookweb entry model instance should use the <code>GuestbookEntry</code> interface instead.
 	 */
 	public static final String TABLE_NAME = "GB_GuestbookEntry";
 

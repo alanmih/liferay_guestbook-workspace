@@ -18,7 +18,7 @@ import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * Provides the SOAP utility for the
- * <code>com.liferay.docs.guestbook.service.GuestbookEntryServiceUtil</code> service
+ * <code>com.liferay.docs.guestbookweb.service.GuestbookEntryServiceUtil</code> service
  * utility. The static methods of this class call the same methods of the
  * service utility. However, the signatures are different because it is
  * difficult for SOAP to support certain types.
@@ -27,10 +27,10 @@ import org.osgi.annotation.versioning.ProviderType;
  * ServiceBuilder follows certain rules in translating the methods. For example,
  * if the method in the service utility returns a <code>java.util.List</code>,
  * that is translated to an array of
- * <code>com.liferay.docs.guestbook.model.GuestbookEntrySoap</code>. If the method in the
+ * <code>com.liferay.docs.guestbookweb.model.GuestbookEntrySoap</code>. If the method in the
  * service utility returns a
- * <code>com.liferay.docs.guestbook.model.GuestbookEntry</code>, that is translated to a
- * <code>com.liferay.docs.guestbook.model.GuestbookEntrySoap</code>. Methods that SOAP
+ * <code>com.liferay.docs.guestbookweb.model.GuestbookEntry</code>, that is translated to a
+ * <code>com.liferay.docs.guestbookweb.model.GuestbookEntrySoap</code>. Methods that SOAP
  * cannot safely wire are skipped.
  * </p>
  *
