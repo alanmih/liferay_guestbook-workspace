@@ -61,6 +61,7 @@ public class GuestbookPortlet extends MVCPortlet {
 
 	public void addEntry(ActionRequest request, ActionResponse response) throws PortalException {
 
+		//Refering to GuestbookEntry.class here will cause runtime error
 //		ServiceContext serviceContext = ServiceContextFactory.getInstance(GuestbookEntry.class.getName(), request);
 		ServiceContext serviceContext = ServiceContextFactory.getInstance("GuestbookEntry", request);
 
@@ -111,8 +112,9 @@ public class GuestbookPortlet extends MVCPortlet {
 		long entryId = ParamUtil.getLong(request, "entryId");
 		long guestbookId = ParamUtil.getLong(request, "guestbookId");
 
-		ServiceContext serviceContext = ServiceContextFactory.getInstance(
-				GuestbookEntry.class.getName(), request);
+		//Refering to GuestbookEntry.class here will cause runtime error
+//		ServiceContext serviceContext = ServiceContextFactory.getInstance(GuestbookEntry.class.getName(), request);
+		ServiceContext serviceContext = ServiceContextFactory.getInstance("GuestbookEntry", request);
 
 		try {
 
@@ -171,9 +173,9 @@ public class GuestbookPortlet extends MVCPortlet {
 
 	//TODO Using @Reference for below 2 variables will fail the deployment, root cause to be investigated
 
-//	@Reference
-//	private GuestbookEntryLocalService _guestbookEntryLocalService;
-	private GuestbookEntryLocalServiceUtil _guestbookEntryLocalService;
+	@Reference
+	private GuestbookEntryLocalService _guestbookEntryLocalService;
+//	private GuestbookEntryLocalServiceUtil _guestbookEntryLocalService;
 
 //	@Reference
 //	private GuestbookLocalService _guestbookLocalService;
